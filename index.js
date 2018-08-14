@@ -36,12 +36,6 @@ var options = {
         display: true,
         description: ' -h          Display help.'
     },
-    example: {
-        display: true,
-        description: '\n command line                            | description\n' +
-        ' react-redux-create reactjsDemo          // create plugin by defaule,Ignore .\n' +
-        ' pluginc -v                              // Show version of pluginCreater.\n'
-    },
     version: {
         display: false,
         description: pkg.name + ' Ver: ' + pkg.version
@@ -80,15 +74,18 @@ function readDir(tmpDir, dist) {
 }
 
 function exec(argv) {
+    console.log(argv);
     if (argv[2] == '-h' || argv.length == 2) {
         displayAllOptions();
         process.exit();
     } else if (argv[2] == '-v') {
         displayOption(options['version']);
         process.exit();
-    } else if (argv[2] === 'add' && argv.length === 3) {
+    } else if (argv[2] === 'add' && argv.length === 4) {
         let path = '/src/pages/' + argv[3];
-        readDir(tmpDir + path, currentDir + path);
+        console.log(path);
+        console.log('add page' + argv[3]);
+        readDir(tmpDir + '/src/pages/demo/', currentDir + path);
     } else if (argv[2] === 'init') {
         readDir(tmpDir, currentDir);
     } else {

@@ -1,7 +1,7 @@
 {
   "name": "react-project-cli",
-  "version": "1.0.0",
-  "description": "create react project",
+  "version": "1.0.2",
+  "description": "react-project-cli",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,8 +12,14 @@
   "author": "luoxiaolan",
   "license": "ISC",
   "dependencies": {
-    "jsdom": "^11.6.2"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luoxiaolan/react-project-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luoxiaolan/react-project-cli/issues"
+  },
+  "homepage": "https://github.com/luoxiaolan/react-project-cli#readme"
 }
