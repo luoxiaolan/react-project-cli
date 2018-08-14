@@ -1,0 +1,19 @@
+{
+  "name": "react-project-cli",
+  "version": "1.0.0",
+  "description": "create react project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "react-project": "./index.js"
+  },
+  "author": "luoxiaolan",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^11.6.2"
+  },
+  "devDependencies": {
+  }
+}
